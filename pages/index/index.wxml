@@ -1,0 +1,4 @@
+<!--pages/index/discovery.wxml-->
+<view class="wrapper">
+	<nav-bar nav-menu-list="{{navMenuList}}"></nav-bar>
+</view>

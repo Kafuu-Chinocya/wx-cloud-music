@@ -1,0 +1,6 @@
+<view class="nav-menu--item">
+	<view class="nav-menu--item_top">
+		<slot name="top"></slot>
+	</view>
+	<slot name="bottom"></slot>
+</view>

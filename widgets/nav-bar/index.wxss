@@ -1,0 +1,18 @@
+.nav-menu {
+}
+
+.nav-menu-item .icon {
+  width: 54.166rpx;
+  height: 54.166rpx;
+  padding: 10px;
+  background: linear-gradient(45deg, #fe3a3b, #fe6665, #fff);
+  font-size: 54rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.nav-menu-item .text {
+  color: #fe3a3b;
+  font-size: 12px;
+}
