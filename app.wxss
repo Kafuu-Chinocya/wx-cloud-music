@@ -1,1 +1,5 @@
 @import '/iconfont/iconfont.wxss';
+
+page {
+  --color-white: #fff;
+}

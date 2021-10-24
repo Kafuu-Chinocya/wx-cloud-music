@@ -1,6 +1,6 @@
 <nav-menu class="nav-menu">
-	<nav-menu-item wx:for="{{navMenuList}}" wx:key="{{item.icon}}" class="nav-menu-item">
+	<nav-menu-item wx:for="{{navMenuList}}" class="nav-menu-item" wx:key="icon">
 		<view slot="top" class="icon iconfont {{item.icon}}"></view>
-		<text slot="bottom" class="text" selectable="false" space="false" decode="false">{{item.label}}</text>
+		<text slot="bottom" class="text" space="false" decode="false">{{item.label}}</text>
 	</nav-menu-item>
 </nav-menu>

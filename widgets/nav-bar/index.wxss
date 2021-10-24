@@ -1,18 +1,43 @@
+:host {
+  --icon-size: 54.166rpx;
+  /* 未选中 */
+  --unselected-item-color: #b3b3b3;
+  --unselected-item-background-color: none;
+  /* 已选中 */
+  --selected-item-color: #fe3a3b;
+  --selected-item-icon-color: var(--color-white);
+  --selected-item-background-color: linear-gradient(
+    45deg,
+    var(--selected-item-color),
+    #fe6665,
+    var(--color-white)
+  );
+}
+
 .nav-menu {
 }
 
 .nav-menu-item .icon {
-  width: 54.166rpx;
-  height: 54.166rpx;
+  width: var(--icon-size);
+  height: var(--icon-size);
   padding: 10px;
-  background: linear-gradient(45deg, #fe3a3b, #fe6665, #fff);
-  font-size: 54rpx;
-  color: #fff;
+  background: var(--unselected-item-background-color);
+  font-size: var(--icon-size);
+  color: var(--unselected-item-color);
   text-align: center;
   border-radius: 100%;
 }
 
+.nav-menu-item.active .icon {
+  background: var(--selected-item-background-color);
+  color: var(--selected-item-icon-color);
+}
+
 .nav-menu-item .text {
-  color: #fe3a3b;
   font-size: 12px;
+  color: var(--unselected-item-color);
+}
+
+.nav-menu-item.active .text {
+  color: #fe3a3b;
 }
